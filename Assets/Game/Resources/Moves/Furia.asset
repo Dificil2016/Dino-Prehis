@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84baae68816a1304a97cff56972220e1, type: 3}
+  m_Name: Furia
+  m_EditorClassIdentifier: 
+  moveName: Furia
+  moveDescription: Se enfurece tanto que sube su ataque y destreza
+  type: {fileID: 11400000, guid: 6079c5e5c5d8e6f4e911c2c2b301ef19, type: 2}
+  power: 0
+  cost: 1
+  priority: 0
+  moveCategory: 0
+  secondaryEffects:
+  - statBoost:
+    - stat: 0
+      boost: 5
+    - stat: 2
+      boost: 5
+    statusEffect: 0
+    chance: 100
+    target: 1

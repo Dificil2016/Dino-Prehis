@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84baae68816a1304a97cff56972220e1, type: 3}
+  m_Name: Chispas
+  m_EditorClassIdentifier: 
+  moveName: Chispas
+  moveDescription: "carga su cuerpo con chispas el\xE9ctricas y golpea"
+  type: {fileID: 11400000, guid: a64eca8a55df1d744827de5b788e4b9e, type: 2}
+  power: 40
+  accuracy: 100
+  priority: 0
+  damageType: 0

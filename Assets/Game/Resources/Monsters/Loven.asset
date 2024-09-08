@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e374bd1fdc5f1846bf140398bfb9f13, type: 3}
+  m_Name: Loven
+  m_EditorClassIdentifier: 
+  monsterName: Loven
+  monsterDescription: Loven descripcion provisional
+  allySprite: {fileID: 21300000, guid: 28aa26ce941c27b4ba728f31ad01d7dc, type: 3}
+  allySpriteBaby: {fileID: 21300000, guid: 0547b472a6678524986eba95a1d340da, type: 3}
+  enemySprite: {fileID: 21300000, guid: a70cee59fd71f49409f2401af92c6c78, type: 3}
+  enemySpriteBaby: {fileID: 21300000, guid: 1dd6d78e7f5c55947a884744331373e8, type: 3}
+  Type1: {fileID: 11400000, guid: 6079c5e5c5d8e6f4e911c2c2b301ef19, type: 2}
+  Type2: {fileID: 11400000, guid: 90df8638073d9be40aa64b87a26b4982, type: 2}
+  maxHP: 100
+  attack: 50
+  defense: 50
+  dexterity: 50
+  speed: 50
+  xpYield: 50
+  maxDevelopment: 50
+  developmentSpeed: 1
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 3523cc97edca413439e4aeb374328f0f, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: 223d241ccd8ccae41ad55d675da094cc, type: 2}
+    level: 4

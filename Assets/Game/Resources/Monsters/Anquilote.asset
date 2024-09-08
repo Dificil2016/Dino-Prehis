@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e374bd1fdc5f1846bf140398bfb9f13, type: 3}
+  m_Name: Anquilote
+  m_EditorClassIdentifier: 
+  monsterName: Anquilote
+  monsterDescription: Anquilote descripcion provisional
+  allySprite: {fileID: 21300000, guid: 6034715298052e34d8222b6ad8ab8b9f, type: 3}
+  allySpriteBaby: {fileID: 21300000, guid: 5e513f3cfb3c4e340a2f41438b72edef, type: 3}
+  enemySprite: {fileID: 21300000, guid: 118a301b5a428fc41a66da900a220853, type: 3}
+  enemySpriteBaby: {fileID: 21300000, guid: 4da94d497dd16464097c6714b324bf5f, type: 3}
+  Type1: {fileID: 11400000, guid: f76cf218de07c9b4d81d38fcc05dedef, type: 2}
+  Type2: {fileID: 11400000, guid: 70938af9232f7134fba3ef75d774506e, type: 2}
+  maxHP: 120
+  attack: 50
+  defense: 70
+  dexterity: 20
+  speed: 25
+  xpYield: 50
+  maxDevelopment: 50
+  developmentSpeed: 1
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 246ea8ac43b786d40a11c45b4ed87989, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: d1140c99de5cd39409078cfaac3c6117, type: 2}
+    level: 3
+  - moveBase: {fileID: 11400000, guid: 5830a600c7e14bd419cf7a64471f6d59, type: 2}
+    level: 6
+  - moveBase: {fileID: 11400000, guid: de39f7beaa50b9148a533942704790cf, type: 2}
+    level: 25

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95be7eb1e1977ca4ea949276906d691e, type: 3}
+  m_Name: Ptero
+  m_EditorClassIdentifier: 
+  objName: "Ptero f\xF3sil"
+  objDescription: "F\xF3sil que contiene el ADN de un Dino capaz de surcar los cielos"
+  type: 1
+  phosilType: 3
+  monsters:
+  - {fileID: 11400000, guid: 81e93ffd7b0257c4c8da9a5834f4f8ba, type: 2}
+  - {fileID: 11400000, guid: 3ee021d5cd7d23045abed1338a128d07, type: 2}
+  - {fileID: 11400000, guid: 36a09ce79a53e434ebdd299d401c5252, type: 2}

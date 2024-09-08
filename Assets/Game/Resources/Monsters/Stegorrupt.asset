@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e374bd1fdc5f1846bf140398bfb9f13, type: 3}
+  m_Name: Stegorrupt
+  m_EditorClassIdentifier: 
+  monsterName: Stegorrupt
+  monsterDescription: Stegorrupt descripcion provisional
+  allySprite: {fileID: 21300000, guid: 44577a1509307604a9070ad71c14ccf3, type: 3}
+  allySpriteBaby: {fileID: 21300000, guid: 38fc3bf3889c81d4894cc3f01b97ae19, type: 3}
+  enemySprite: {fileID: 21300000, guid: 9ece1fcf26a7f17429adff1388141d8b, type: 3}
+  enemySpriteBaby: {fileID: 21300000, guid: 533a06ecf610c7c45b6994fb85f927b5, type: 3}
+  Type1: {fileID: 11400000, guid: 70938af9232f7134fba3ef75d774506e, type: 2}
+  Type2: {fileID: 11400000, guid: 46b57d6c80cf9b54080a3a4875c1a083, type: 2}
+  maxHP: 100
+  attack: 50
+  defense: 50
+  dexterity: 50
+  speed: 50
+  xpYield: 50
+  maxDevelopment: 100
+  developmentSpeed: 1
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: a736e883255d265429815bd2894cab01, type: 2}
+    level: 0

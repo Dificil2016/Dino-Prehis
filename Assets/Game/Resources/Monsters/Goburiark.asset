@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e374bd1fdc5f1846bf140398bfb9f13, type: 3}
+  m_Name: Goburiark
+  m_EditorClassIdentifier: 
+  monsterName: Goburiark
+  monsterDescription: Goburiark descripcion provisional
+  allySprite: {fileID: 21300000, guid: 4b7fbedb0d26d1a4a96b9e720b6c8345, type: 3}
+  allySpriteBaby: {fileID: 21300000, guid: 91a717f652b6fee4083a957fba621781, type: 3}
+  enemySprite: {fileID: 21300000, guid: 88ff82cf0e7e660439a08329f8be4b62, type: 3}
+  enemySpriteBaby: {fileID: 21300000, guid: 5c8ff174680d3144eab9ad8d8fc327e6, type: 3}
+  Type1: {fileID: 11400000, guid: 6391f62d6430667468779bc4e51d620d, type: 2}
+  Type2: {fileID: 11400000, guid: 4c4fd5980b4888a48b36f53bd88edba7, type: 2}
+  maxHP: 100
+  attack: 50
+  defense: 50
+  dexterity: 50
+  speed: 50
+  xpYield: 50
+  maxDevelopment: 50
+  developmentSpeed: 1
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: c76d903bbe51e25409335d34b3105986, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: a736e883255d265429815bd2894cab01, type: 2}
+    level: 0

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161e8c970a6647f489e11906af6029b4, type: 3}
+  m_Name: Viento
+  m_EditorClassIdentifier: 
+  typeName: Viento
+  typeIcon: {fileID: 21300000, guid: ddfd8e8f03ab82246a725aa5b258f13c, type: 3}
+  typeColor: {r: 0.13616945, g: 0.5660378, b: 0.4541843, a: 1}
+  weakness:
+  - {fileID: 11400000, guid: a64eca8a55df1d744827de5b788e4b9e, type: 2}
+  resistences:
+  - {fileID: 11400000, guid: 70938af9232f7134fba3ef75d774506e, type: 2}

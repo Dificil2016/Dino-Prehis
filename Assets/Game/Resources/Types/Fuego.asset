@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161e8c970a6647f489e11906af6029b4, type: 3}
+  m_Name: Fuego
+  m_EditorClassIdentifier: 
+  typeName: Fuego
+  typeIcon: {fileID: 21300000, guid: f1f88d7d86d7cbf4fab977ec69757a42, type: 3}
+  typeColor: {r: 0.6745098, g: 0.19607845, b: 0.19607845, a: 1}
+  weakness:
+  - {fileID: 11400000, guid: 6391f62d6430667468779bc4e51d620d, type: 2}
+  - {fileID: 11400000, guid: a64eca8a55df1d744827de5b788e4b9e, type: 2}
+  resistences:
+  - {fileID: 11400000, guid: f76cf218de07c9b4d81d38fcc05dedef, type: 2}

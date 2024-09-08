@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95be7eb1e1977ca4ea949276906d691e, type: 3}
+  m_Name: Teropodo
+  m_EditorClassIdentifier: 
+  objName: "F\xF3sic ter\xF3podo"
+  objDescription: "F\xF3sil que contiene el ADN de un Dino con aspecto de bestia"
+  type: 1
+  phosilType: 0
+  monsters:
+  - {fileID: 11400000, guid: 6ed4d75ad1df1b740841364eeb68e6d6, type: 2}
+  - {fileID: 11400000, guid: 354e5feae03d7fb48bbd56fdc261dcd4, type: 2}

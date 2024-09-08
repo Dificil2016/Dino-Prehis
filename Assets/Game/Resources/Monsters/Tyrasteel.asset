@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e374bd1fdc5f1846bf140398bfb9f13, type: 3}
+  m_Name: Tyrasteel
+  m_EditorClassIdentifier: 
+  monsterName: Tyrasteel
+  monsterDescription: Tyrasteel descripcion provisional
+  allySprite: {fileID: 21300000, guid: 12601921d65852b40827a89c59113e5b, type: 3}
+  allySpriteBaby: {fileID: 21300000, guid: 7a0103e55489f7c4c9d4ac62fdfb9c46, type: 3}
+  enemySprite: {fileID: 21300000, guid: d2de2abf84a669f47863579017b35b8a, type: 3}
+  enemySpriteBaby: {fileID: 21300000, guid: 5b73af91a17feab46adf00b3500af1da, type: 3}
+  Type1: {fileID: 11400000, guid: b9065a48bd90b134fae0d4972add4add, type: 2}
+  Type2: {fileID: 11400000, guid: 460c082b50ea62146833613be7b7255a, type: 2}
+  maxHP: 95
+  attack: 75
+  defense: 50
+  dexterity: 30
+  speed: 50
+  xpYield: 50
+  maxDevelopment: 50
+  developmentSpeed: 1
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 3523cc97edca413439e4aeb374328f0f, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: bcf0450910a5e944c892d92afe703565, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: 049f495660fa8b74f95f231ec0d92507, type: 2}
+    level: 6
+  - moveBase: {fileID: 11400000, guid: a736e883255d265429815bd2894cab01, type: 2}
+    level: 7
+  - moveBase: {fileID: 11400000, guid: 5d5ce7bedb15e9c45a4f62505891873b, type: 2}
+    level: 8
+  - moveBase: {fileID: 11400000, guid: 8bc80b485d189474a9f8805fdb29bcdb, type: 2}
+    level: 25

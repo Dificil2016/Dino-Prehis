@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e374bd1fdc5f1846bf140398bfb9f13, type: 3}
+  m_Name: Otachifana
+  m_EditorClassIdentifier: 
+  monsterName: Otachifana
+  monsterDescription: Otachifana descripcion provisional
+  allySprite: {fileID: 21300000, guid: 45fbbe0a15cbc1c4c8d2f62cc5b8ab75, type: 3}
+  allySpriteBaby: {fileID: 21300000, guid: 8c423a5c8ff8173408b2d7a434c8f9d2, type: 3}
+  enemySprite: {fileID: 21300000, guid: 348faf53a2174834e8418bfd770c0524, type: 3}
+  enemySpriteBaby: {fileID: 21300000, guid: 5c5af735310bd3f44b4820805aac2bec, type: 3}
+  Type1: {fileID: 11400000, guid: f76cf218de07c9b4d81d38fcc05dedef, type: 2}
+  Type2: {fileID: 11400000, guid: 46b57d6c80cf9b54080a3a4875c1a083, type: 2}
+  maxHP: 100
+  attack: 50
+  defense: 50
+  dexterity: 50
+  speed: 50
+  xpYield: 200
+  maxDevelopment: 50
+  developmentSpeed: 1
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 246ea8ac43b786d40a11c45b4ed87989, type: 2}
+    level: 0
+  - moveBase: {fileID: 11400000, guid: de39f7beaa50b9148a533942704790cf, type: 2}
+    level: 34
