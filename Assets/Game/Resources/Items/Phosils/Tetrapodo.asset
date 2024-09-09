@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objName: "F\xF3sil tetr\xE1podo"
   objDescription: "F\xF3sil que contiene el ADN de un Dino que camina en 4 patas"
-  type: 1
-  phosilType: 1
+  type: 2
   monsters:
   - {fileID: 11400000, guid: a6b52a77311f037479809d669b91a495, type: 2}
   - {fileID: 11400000, guid: 76edcf1954509904fba407a5ec499aee, type: 2}

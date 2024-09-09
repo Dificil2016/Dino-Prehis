@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -63,6 +64,19 @@ public class Monster
     public LearnableMove GetLearnableMove()
     {
        return monsterBase.learnableMoves.Where(x => x.level == level).FirstOrDefault();
+    }
+
+    public void LearnMove(Move moveToLearn)
+    {
+        if (Moves.Count > 4)
+            return;
+
+        Moves.Add(moveToLearn);
+    }
+
+    public bool HasMove(Move move)
+    {
+        return Moves.Count(m => m == move) > 0;
     }
 
     public void Init()

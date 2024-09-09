@@ -394,6 +394,7 @@ MonoBehaviour:
   itemSlotUI: {fileID: -3709718558771811396, guid: be0bb346dda4f854a848e534504676ff, type: 3}
   partyMenu: {fileID: 5872120897477757484}
   typeText: {fileID: 180761757619352745}
+  moveSelectionUI: {fileID: 236300528330258864}
   selectedType: 0
   selectedItemIndex: 0
 --- !u!1 &980422326032216139
@@ -2179,8 +2180,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4695567891142594278}
-        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+      - m_Target: {fileID: 2593693677690911925}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: SelectLearningMove
         m_Mode: 3
         m_Arguments:
@@ -2748,9 +2749,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2480193036562860426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.89686096, y: 0.89686096, z: 0.89686096}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1385556939002730079}
@@ -2758,7 +2759,7 @@ RectTransform:
   - {fileID: 9052761830923850796}
   - {fileID: 5053474068447082995}
   - {fileID: 5217149441833366501}
-  m_Father: {fileID: 3113327122288476959}
+  m_Father: {fileID: 696781968461775304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3143,8 +3144,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4695567891142594278}
-        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+      - m_Target: {fileID: 2593693677690911925}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: SelectLearningMove
         m_Mode: 3
         m_Arguments:
@@ -3539,8 +3540,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4695567891142594278}
-        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+      - m_Target: {fileID: 2593693677690911925}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: SelectLearningMove
         m_Mode: 3
         m_Arguments:
@@ -5551,7 +5552,6 @@ RectTransform:
   - {fileID: 8686097310474619604}
   - {fileID: 3667787373849541013}
   - {fileID: 1374998636268240968}
-  - {fileID: 4966285399588553600}
   m_Father: {fileID: 3679976846755305960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6448,6 +6448,7 @@ RectTransform:
   - {fileID: 7099722633354868638}
   - {fileID: 3386323789309928256}
   - {fileID: 681968729738633491}
+  - {fileID: 4966285399588553600}
   m_Father: {fileID: 8435413316340285037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7307,8 +7308,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4695567891142594278}
-        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+      - m_Target: {fileID: 2593693677690911925}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: SelectLearningMove
         m_Mode: 3
         m_Arguments:
@@ -7607,8 +7608,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4695567891142594278}
-        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+      - m_Target: {fileID: 2593693677690911925}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: SelectLearningMove
         m_Mode: 3
         m_Arguments:

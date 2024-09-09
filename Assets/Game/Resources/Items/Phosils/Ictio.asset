@@ -15,7 +15,6 @@ MonoBehaviour:
   objName: "Ictio f\xF3sil"
   objDescription: "F\xF3sil que contiene el ADN de un Dino que habita las profundidades
     marinas"
-  type: 1
-  phosilType: 2
+  type: 2
   monsters:
   - {fileID: 11400000, guid: 51a7455378c21ef46b4ed55bdd9ad5ef, type: 2}

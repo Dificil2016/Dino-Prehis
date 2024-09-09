@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objName: "Ptero f\xF3sil"
   objDescription: "F\xF3sil que contiene el ADN de un Dino capaz de surcar los cielos"
-  type: 1
-  phosilType: 3
+  type: 2
   monsters:
   - {fileID: 11400000, guid: 81e93ffd7b0257c4c8da9a5834f4f8ba, type: 2}
   - {fileID: 11400000, guid: 3ee021d5cd7d23045abed1338a128d07, type: 2}

@@ -23,5 +23,5 @@ public class ItemBase : ScriptableObject
 }
 public enum ItemType
 {
-    Recuperación, Fósil
+    Recuperación, Movimientos, Fósil
 }

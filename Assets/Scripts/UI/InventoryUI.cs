@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum InventoryUIState { Selection, Busy}
+public enum InventoryUIState { Selection, MoveToForget, Busy}
 
 public class InventoryUI : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] ItemSlotUI itemSlotUI;
     [SerializeField] PartyMenu partyMenu;
     [SerializeField] Text typeText;
+    [SerializeField] MoveSelectionUI moveSelectionUI;
 
     Inventory inventory;
 
@@ -93,7 +94,10 @@ public class InventoryUI : MonoBehaviour
         }
 
         itemsIndexPosition = 0;
-        selectedItemIndex = itemsIndex[itemsIndexPosition];
+        if (itemsIndex.Count > 0)
+        { selectedItemIndex = itemsIndex[itemsIndexPosition]; }
+        else
+        { selectedItemIndex = inventory.Slots.Count; }
         SetItemInfo();
     }
 
@@ -127,12 +131,10 @@ public class InventoryUI : MonoBehaviour
     {
         if (state == InventoryUIState.Selection)
         {
+            DialogManager.Instance.SetDialog("");
+
             if (inventory.Slots.Count > selectedItemIndex)
             { DialogManager.Instance.SetDialog($"[{SendSelectedItem().objName}] {SendSelectedItem().objDescription}"); }
-            else
-            {
-                DialogManager.Instance.SetDialog(""); 
-            }
         }
     }
 
@@ -150,7 +152,9 @@ public class InventoryUI : MonoBehaviour
         {
             state = InventoryUIState.Busy;
 
-            ItemBase item = SendSelectedItem();
+            var item = SendSelectedItem();
+
+            yield return HandleTmItems(monster);
 
             if (item.Use(monster) == true)
             {
@@ -158,17 +162,80 @@ public class InventoryUI : MonoBehaviour
                 GameController.Instance.PartyMenu.SetPartyData();
                 UpdateInventory();
 
-                yield return DialogManager.Instance.TypeDialog($"{GameController.Instance.PlayerController.trainerName} ha usado {item.objName} en {monster.nameTag}");
-                yield return new WaitForSeconds(0.3f);
+                if (item is RecoveryItem)
+                {
+                    yield return DialogManager.Instance.TypeDialog($"{GameController.Instance.PlayerController.trainerName} ha usado {item.objName} en {monster.nameTag}");
+                    yield return new WaitForSeconds(0.3f);
+                }
             }
             else
             {
-                yield return DialogManager.Instance.TypeDialog($"No tendría ningún efecto");
+                yield return DialogManager.Instance.TypeDialog($"No ha tenido ningún efecto");
                 yield return new WaitForSeconds(0.3f);
             }
             state = InventoryUIState.Selection;
             SetItemInfo();
         }
+    }
+
+    Move moveToLearn;
+    Monster monster;
+
+    IEnumerator HandleTmItems(Monster selectedMonster)
+    {
+        var item = SendSelectedItem() as TmItem;
+
+        monster = selectedMonster;
+        moveToLearn = item.Move;
+
+        if (item == null)
+        { yield break; }
+        if (monster.HasMove(moveToLearn))
+        {
+            yield return DialogManager.Instance.TypeDialog($"{monster.nameTag} ya conoce {moveToLearn.moveName}");
+            yield return new WaitForSeconds(0.3f);
+        }
+        else if (monster.Moves.Count < 4)
+        {
+            monster.LearnMove(moveToLearn);
+            yield return DialogManager.Instance.TypeDialog($"{monster.nameTag} ha aprendido {moveToLearn.moveName}");
+            yield return new WaitForSeconds(0.3f);
+        }
+        else
+        {
+            yield return DialogManager.Instance.TypeDialog($"{monster.nameTag} intenta aprender {moveToLearn.moveName}");
+            yield return new WaitForSeconds(0.3f);
+            yield return DialogManager.Instance.TypeDialog($"pero {monster.nameTag} ya conoce 4 movimientos");
+            yield return new WaitForSeconds(0.3f);
+            yield return LearningMoveSelection(monster, moveToLearn);
+            
+            yield return new WaitUntil(() => state != InventoryUIState.MoveToForget);
+        }
+        yield return new WaitForSeconds(0.3f);
+    }
+
+    IEnumerator LearningMoveSelection(Monster monster, Move newMove)
+    {
+        state = InventoryUIState.MoveToForget;
+        yield return DialogManager.Instance.TypeDialog("Elije que movimiento quieres olvidar");
+        moveSelectionUI.SetMoveData(monster.Moves, newMove);
+        moveSelectionUI.gameObject.SetActive(true);
+    }
+
+    public IEnumerator SelectLearningMove(int moveID)
+    {
+        moveSelectionUI.gameObject.SetActive(false);
+
+        if (moveID < monster.Moves.Count)
+        {
+            yield return DialogManager.Instance.TypeDialog($"{monster.nameTag} olvidó {monster.Moves[moveID].moveName} para aprender {moveToLearn.moveName}");
+            monster.Moves[moveID] = moveToLearn;
+        }
+        else
+        { yield return DialogManager.Instance.TypeDialog($"{monster.nameTag} no ha aprendido {moveToLearn.moveName}"); }
+        yield return new WaitForEndOfFrame();
+
+        state = InventoryUIState.Selection;
     }
 
     public bool UseItemInBattle(Monster monster)

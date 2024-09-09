@@ -245,6 +245,21 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void SelectLearningMove(int moveID)
+    {
+        if (state == GameState.Battle)
+        {
+            battleSystem.SelectLearningMove(moveID);
+        }
+        else if (state == GameState.Bag)
+        {
+            StartCoroutine(inventoryUI.SelectLearningMove(moveID));
+        }
+    }
+
+    public void SetState(GameState newstate)
+    { state = newstate; }
+
     public void OpenItemSelection(ItemType type)
     {
         state = GameState.ItemSelection;

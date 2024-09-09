@@ -15,7 +15,6 @@ MonoBehaviour:
   objName: Bloque de hielo
   objDescription: "F\xF3sil que contiene el ADN de un Dino capaz de soportar baj\xEDsimas
     temperaturas"
-  type: 1
-  phosilType: 6
+  type: 2
   monsters:
   - {fileID: 11400000, guid: 76edcf1954509904fba407a5ec499aee, type: 2}

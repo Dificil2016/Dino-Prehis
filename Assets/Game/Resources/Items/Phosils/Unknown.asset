@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objName: "F\xF3sil extra\xF1o"
   objDescription: "F\xF3sil que contiene el ADN de un Dino de aspecto desconocido"
-  type: 1
-  phosilType: 5
+  type: 2
   monsters:
   - {fileID: 11400000, guid: d45b0a0f651c1104589457aec7765956, type: 2}
   - {fileID: 11400000, guid: d419a67e94e44f744af1f407279dcab1, type: 2}
